@@ -153,3 +153,40 @@
     }
   });
 })();
+
+// Flores dual-room tab switcher
+function switchFloresTab(sala) {
+  var imgs = {
+    guardianes: 'img/Los Guardianes del Planeta.jpg',
+    laboratorio: 'img/Laboratorio Aracnido.jpg'
+  };
+  var alts = {
+    guardianes: 'Los Guardianes del Planeta',
+    laboratorio: 'El Laboratorio Ar\u00e1cnido'
+  };
+
+  // Switch tabs active state
+  document.querySelectorAll('.room-tab-btn').forEach(function(btn) {
+    var active = btn.id === 'ftab-' + sala;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+
+  // Switch visible panel
+  document.querySelectorAll('.room-tab-panel').forEach(function(panel) {
+    panel.classList.toggle('active', panel.id === 'fpanel-' + sala);
+  });
+
+  // Crossfade the room image
+  var img = document.getElementById('flores-img');
+  if (img) {
+    img.style.transition = 'opacity .3s ease';
+    img.style.opacity = '0';
+    setTimeout(function() {
+      img.src = imgs[sala];
+      img.alt = alts[sala];
+      img.style.opacity = '1';
+    }, 300);
+  }
+}
+

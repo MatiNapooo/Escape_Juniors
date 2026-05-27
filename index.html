@@ -188,33 +188,71 @@
           </div>
         </article>
 
-        <!-- FLORES -->
+        <!-- FLORES (2 SALAS) -->
         <article id="flores" class="room reveal">
-          <div class="room-media">
-            <img src="img/Los Guardianes del Planeta.jpg" alt="Los Guardianes del Planeta" class="room-img" />
-            <div class="room-badge">Flores</div>
+          <div class="room-media" id="flores-room-media">
+            <img src="img/Los Guardianes del Planeta.jpg" alt="Los Guardianes del Planeta" class="room-img" id="flores-img" />
+            <div class="room-badge">Flores &nbsp;·&nbsp; 2 Salas</div>
           </div>
           <div class="room-card">
-            <div class="room-top">
-              <div class="difficulty" aria-label="Dificultad media-alta">
-                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
-                  class="dot on"></span><span class="dot off"></span>
-                <span class="diff-label">Dificultad Alta</span>
+            <!-- Tab switcher -->
+            <div class="room-tabs" role="tablist" aria-label="Salas de Flores">
+              <button class="room-tab-btn active" id="ftab-guardianes" role="tab" aria-selected="true"
+                onclick="switchFloresTab('guardianes')">🚀 Guardianes del Planeta</button>
+              <button class="room-tab-btn" id="ftab-laboratorio" role="tab" aria-selected="false"
+                onclick="switchFloresTab('laboratorio')">🕷️ Laboratorio Arácnido</button>
+            </div>
+
+            <!-- Panel Guardianes -->
+            <div class="room-tab-panel active" id="fpanel-guardianes" role="tabpanel">
+              <div class="room-top">
+                <div class="room-tab-label">Sala 1</div>
+                <div class="difficulty" aria-label="Dificultad alta">
+                  <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                    class="dot on"></span><span class="dot off"></span>
+                  <span class="diff-label">Dificultad Alta</span>
+                </div>
+                <h3>Los Guardianes del Planeta</h3>
+                <div class="room-meta">
+                  <span>⏱ 60 minutos</span>
+                  <span>👥 Grupos</span>
+                  <span>📍 Av. Rivadavia 6395, Flores</span>
+                </div>
               </div>
-              <h3>Los Guardianes del Planeta</h3>
-              <div class="room-meta">
-                <span>⏱ 60 minutos</span>
-                <span>👥 Grupos</span>
-                <span>📍 Av. Rivadavia 6395, Flores</span>
+              <p class="room-text">Un poderoso artefacto cósmico fue separado en cinco anillos de energía escondidos en
+                una nave espacial perdida entre las estrellas. Deberán abordarla, atravesar sus sistemas y activar todos
+                los anillos para liberar la nave y regresar a casa.</p>
+              <div class="room-actions">
+                <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar Los Guardianes del Planeta"
+                  target="_blank" rel="noopener">Reservar</a>
+                <a class="btn btn-secondary" href="flores.html">Ver más</a>
               </div>
             </div>
-            <p class="room-text">Un poderoso artefacto cósmico fue separado en cinco anillos de energía escondidos en
-              una nave espacial perdida entre las estrellas. Deberán abordarla, atravesar sus sistemas y activar todos
-              los anillos para liberar la nave y regresar a casa.</p>
-            <div class="room-actions">
-              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!"
-                target="_blank" rel="noopener">Reservar</a>
-              <a class="btn btn-secondary" href="flores.html">Ver más</a>
+
+            <!-- Panel Laboratorio -->
+            <div class="room-tab-panel" id="fpanel-laboratorio" role="tabpanel">
+              <div class="room-top">
+                <div class="room-tab-label">Sala 2</div>
+                <div class="difficulty" aria-label="Dificultad extrema">
+                  <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                    class="dot on"></span><span class="dot on"></span>
+                  <span class="diff-label">Dificultad Extrema</span>
+                </div>
+                <h3>El Laboratorio Arácnido</h3>
+                <div class="room-meta">
+                  <span>⏱ 60 minutos</span>
+                  <span>👥 Grupos</span>
+                  <span>📍 Av. Rivadavia 6395, Flores</span>
+                </div>
+              </div>
+              <p class="room-text">Un científico instaló en secreto un laboratorio de experimentos arácnidos… hasta que
+                algo salió muy mal. Los sistemas se sellaron y desapareció sin dejar rastro. Descubrí qué ocurrió
+                antes de que sus creaciones vuelvan a despertar.</p>
+              <div class="room-actions">
+                <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar El Laboratorio Aracnido"
+                  target="_blank" rel="noopener">Reservar</a>
+                <a class="btn btn-secondary" href="flores.html#seccion-laboratorio">Ver más</a>
+              </div>
             </div>
           </div>
         </article>
