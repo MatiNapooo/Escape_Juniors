@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escape Juniors – La primera sala de escape para chicos</title>
+  <meta name="description"
+    content="Escape Juniors: la primera sala de escape para adultos, adaptada para chicos. 3 niveles de dificultad. Cumpleaños y eventos en Buenos Aires." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header fijo -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <div class="brand-logo-wrap">
+          <img class="brand-logo-img" src="assets/logo.png" alt="Escape Juniors" />
+        </div>
+        <span class="brand-name">Escape <strong>Juniors</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#sucursales">Nuestras Sucursales</a>
+        <a href="#como-funciona">Cómo Funciona</a>
+        <a href="#sedes">Ubicaciones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta open-booking-modal" href="#bookingModal">Reservar</a>
+
+      <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú Móvil -->
+  <div class="mobile-menu-overlay" aria-hidden="true" id="mobileMenu">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Cerrar menú">×</button>
+      <nav class="mobile-nav">
+        <a href="caballito.html" class="mobile-link">El Legado del Mago Legendario</a>
+        <a href="belgrano.html" class="mobile-link">Academia de Héroes</a>
+        <a href="flores.html" class="mobile-link">Los Guardianes del Planeta</a>
+        <a href="flores2.html" class="mobile-link">Los Secretos del Bosque Mágico</a>
+        <a href="floresta.html" class="mobile-link">El Árbol Encantado</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="hero-badge">🎉 La experiencia #1 para cumpleaños en CABA</span>
+          <h1>Festejar nunca fue tan original</h1>
+          <p>Somos la primera Sala de Escape para adultos, adaptada para chicos.<br>3 niveles de dificultad: chicos,
+            adolescentes y adultos. <strong>¡Vos elegís el tuyo!</strong></p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary open-booking-modal" href="#bookingModal">¡Reservar ahora!</a>
+            <a class="btn btn-outline" href="#sucursales">Ver sucursales</a>
+          </div>
+
+          <a class="hero-down" href="#sucursales" aria-label="Bajar">
+            <span class="hero-down-label">DESCUBRÍ NUESTRAS AVENTURAS</span>
+            <span class="hero-down-icon">⌄</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="section section-soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>¿Cómo Funciona?</h2>
+          <p>Una aventura física y mental que pone a prueba tu ingenio</p>
+        </div>
+
+        <div class="features-grid reveal">
+          <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Aventura Físico-Mental</h3>
+            <p>Un juego en tiempo real donde deberán solucionar enigmas y rompecabezas para desenlazar una historia y
+              escapar en 60 minutos.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>Diferentes Escenarios</h3>
+            <p>Distintas temáticas y objetivos proponen un desafío contrarreloj. Muchas veces son los más chicos los más
+              astutos.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Desafío e Ingenio</h3>
+            <p>Apela a la creatividad, trabajo en equipo y lógica. Genera frustración cuando no logran salir y euforia
+              al alcanzar la meta.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>Apto para Claustrofóbicos</h3>
+            <p>Hay asistentes supervisando por circuito cerrado toda la aventura. Los participantes son monitoreados y
+              se les dan pistas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUCURSALES / CARDS -->
+    <section id="sucursales" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Nuestras Sucursales de Aventura</h2>
+          <p>5 sucursales en Buenos Aires, cada una con su propia historia épica</p>
+        </div>
+
+        <!-- CABALLITO -->
+        <article id="caballito" class="room reveal">
+          <div class="room-media">
+            <img src="img/El Legado del Mago Legendario.jpg" alt="El Legado del Mago Legendario" class="room-img" />
+            <div class="room-badge">Caballito</div>
+          </div>
+          <div class="room-card">
+            <div class="room-top">
+              <div class="difficulty" aria-label="Dificultad media">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                  class="dot off"></span><span class="dot off"></span>
+                <span class="diff-label">Dificultad Media</span>
+              </div>
+              <h3>El Legado del Mago Legendario</h3>
+              <div class="room-meta">
+                <span>⏱ 60 minutos</span>
+                <span>👥 Grupos</span>
+                <span>📍 Zuviria 275, Caballito</span>
+              </div>
+            </div>
+            <p class="room-text">Hace muchos siglos, este castillo fue gobernado por un rey que era también el mago más
+              sabio del reino. Antes de morir, escondió fragmentos de su alma mágica en distintos lugares secretos. Solo
+              quienes logren encontrarlos todos serán dignos de gobernar estas tierras.</p>
+            <div class="room-actions">
+              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491173616186&text=Hola!"
+                target="_blank" rel="noopener">Reservar</a>
+              <a class="btn btn-secondary" href="caballito.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BELGRANO -->
+        <article id="belgrano" class="room room-reverse reveal">
+          <div class="room-media">
+            <img src="img/Academia de Héroes.jpg" alt="Academia de Héroes" class="room-img" />
+            <div class="room-badge">Belgrano</div>
+          </div>
+          <div class="room-card">
+            <div class="room-top">
+              <div class="difficulty" aria-label="Dificultad alta">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                  class="dot on"></span><span class="dot off"></span>
+                <span class="diff-label">Dificultad Alta</span>
+              </div>
+              <h3>Academia de Héroes</h3>
+              <div class="room-meta">
+                <span>⏱ 60 minutos</span>
+                <span>👥 Grupos</span>
+                <span>📍 Echeverría 2490, Belgrano</span>
+              </div>
+            </div>
+            <p class="room-text">Hace años se creó una academia secreta para entrenar personas con habilidades
+              extraordinarias. Deberán resolver enigmas, activar sistemas ocultos y demostrar que pueden trabajar juntos
+              bajo presión. Solo los verdaderos héroes lograrán graduarse.</p>
+            <div class="room-actions">
+              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491122549531&text=Hola!"
+                target="_blank" rel="noopener">Reservar</a>
+              <a class="btn btn-secondary" href="belgrano.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- FLORES -->
+        <article id="flores" class="room reveal">
+          <div class="room-media">
+            <img src="img/Los Guardianes del Planeta.jpg" alt="Los Guardianes del Planeta" class="room-img" />
+            <div class="room-badge">Flores</div>
+          </div>
+          <div class="room-card">
+            <div class="room-top">
+              <div class="difficulty" aria-label="Dificultad media-alta">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                  class="dot on"></span><span class="dot off"></span>
+                <span class="diff-label">Dificultad Alta</span>
+              </div>
+              <h3>Los Guardianes del Planeta</h3>
+              <div class="room-meta">
+                <span>⏱ 60 minutos</span>
+                <span>👥 Grupos</span>
+                <span>📍 Av. Rivadavia 6395, Flores</span>
+              </div>
+            </div>
+            <p class="room-text">Un poderoso artefacto cósmico fue separado en cinco anillos de energía escondidos en
+              una nave espacial perdida entre las estrellas. Deberán abordarla, atravesar sus sistemas y activar todos
+              los anillos para liberar la nave y regresar a casa.</p>
+            <div class="room-actions">
+              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!"
+                target="_blank" rel="noopener">Reservar</a>
+              <a class="btn btn-secondary" href="flores.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- FLORES 2 -->
+        <article id="flores2" class="room room-reverse reveal">
+          <div class="room-media">
+            <img src="img/Los Secretos del Bosque Mágico.jpg" alt="Los Secretos del Bosque Mágico" class="room-img" />
+            <div class="room-badge">Flores 2</div>
+          </div>
+          <div class="room-card">
+            <div class="room-top">
+              <div class="difficulty" aria-label="Dificultad media">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span
+                  class="dot off"></span><span class="dot off"></span>
+                <span class="diff-label">Dificultad Media</span>
+              </div>
+              <h3>Los Secretos del Bosque Mágico</h3>
+              <div class="room-meta">
+                <span>⏱ 60 minutos</span>
+                <span>👥 Grupos</span>
+                <span>📍 Av. J.B. Alberdi 2020, CABA</span>
+              </div>
+            </div>
+            <p class="room-text">En el bosque que rodea una antigua escuela de magia hay señales extrañas. Dentro de una
+              cabaña abandonada, el guardabosques dejó pistas que llevan hasta una sala de conjuros con libros
+              prohibidos. ¿Podrán descifrar el secreto antes de despertar algo que no debería despertar?</p>
+            <div class="room-actions">
+              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123879152&text=Hola!"
+                target="_blank" rel="noopener">Reservar</a>
+              <a class="btn btn-secondary" href="flores2.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- FLORESTA -->
+        <article id="floresta" class="room reveal">
+          <div class="room-media">
+            <img src="img/El Árbol Encantado.jpg" alt="El Árbol Encantado" class="room-img" />
+            <div class="room-badge">Floresta</div>
+          </div>
+          <div class="room-card">
+            <div class="room-top">
+              <div class="difficulty" aria-label="Dificultad baja">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot off"></span><span
+                  class="dot off"></span><span class="dot off"></span>
+                <span class="diff-label">Dificultad Baja</span>
+              </div>
+              <h3>El Árbol Encantado</h3>
+              <div class="room-meta">
+                <span>⏱ 60 minutos</span>
+                <span>👥 Grupos</span>
+                <span>📍 Av. Rivadavia 8022, Floresta</span>
+              </div>
+            </div>
+            <p class="room-text">En medio del bosque existe un árbol especial cuyas raíces esconden un antiguo pasaje
+              secreto hacia la habitación de un mago prisionero. Deberán descifrar sus pistas y resolver los enigmas que
+              dejó ocultos para encontrar la salida de los calabozos olvidados.</p>
+            <div class="room-actions">
+              <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123992012&text=Hola!"
+                target="_blank" rel="noopener">Reservar</a>
+              <a class="btn btn-secondary" href="floresta.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>PREGUNTAS FRECUENTES</h2>
+          <p>Todo lo que necesitás saber antes de tu aventura</p>
+        </div>
+
+        <div class="accordion reveal" data-accordion>
+          <button class="acc-item" type="button" aria-expanded="true">
+            <span class="acc-icon">—</span>
+            <span class="acc-title">¿Qué es una sala de escape?</span>
+          </button>
+          <div class="acc-panel open">
+            <p>Es un juego en tiempo real que consiste en encerrar a un grupo de jugadores en una habitación, donde
+              deberán solucionar enigmas y rompecabezas de todo tipo para ir desenlazando una historia y escapar en 60
+              minutos.</p>
+          </div>
+
+          <button class="acc-item" type="button" aria-expanded="false">
+            <span class="acc-icon">+</span>
+            <span class="acc-title">¿Es apto para claustrofóbicos?</span>
+          </button>
+          <div class="acc-panel">
+            <p>¡Sí! Durante el tiempo que permanecen en la sala hay asistentes supervisando por circuito cerrado toda la
+              aventura. Los participantes son monitoreados y se les van dando pistas. En cualquier momento pueden salir
+              si lo necesitan.</p>
+          </div>
+
+          <button class="acc-item" type="button" aria-expanded="false">
+            <span class="acc-icon">+</span>
+            <span class="acc-title">¿Cuántos participantes pueden jugar?</span>
+          </button>
+          <div class="acc-panel">
+            <p>Contamos con diferentes sucursales adaptadas para distintos grupos. Contáctanos por WhatsApp para coordinar la
+              cantidad de participantes y encontrar la sucursal ideal para tu grupo o festejo.</p>
+          </div>
+
+          <button class="acc-item" type="button" aria-expanded="false">
+            <span class="acc-icon">+</span>
+            <span class="acc-title">¿Se puede hacer un cumpleaños?</span>
+          </button>
+          <div class="acc-panel">
+            <p>¡Por supuesto! Además de vivir la aventura dentro de la sucursal, contamos con espacios lúdicos, animación a
+              cargo de nuestros Game Masters, juegos interactivos y área de festejo. ¡Una experiencia única para
+              celebrar como nunca!</p>
+          </div>
+
+          <button class="acc-item" type="button" aria-expanded="false">
+            <span class="acc-icon">+</span>
+            <span class="acc-title">¿Cómo reservo?</span>
+          </button>
+          <div class="acc-panel">
+            <p>Podés reservar directamente por WhatsApp haciendo clic en el botón "Reservar". Nuestro equipo te va a
+              responder a la brevedad para coordinar fecha, horario y sucursal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="section" id="resenas">
+      <div class="container">
+        <div class="reviews reveal">
+          <div class="reviews-head">
+            <h2>Experiencias Reales</h2>
+            <div class="stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffb400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffb400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffb400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffb400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffb400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="muted">Calificación perfecta de familias en Google Maps</p>
+          </div>
+
+          <div class="reviews-slider" id="reviewsSlider">
+            <!-- Caballito -->
+            <a href="https://maps.app.goo.gl/g3NnzFBbs9rmGd5E8" target="_blank" rel="noopener" class="review-card interactive">
+              <div class="review-google-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Ver reseña</span>
+              </div>
+              <div class="review-author">
+                <div class="avatar"><img src="https://ui-avatars.com/api/?name=Rosana+Hulais&background=ff4fa3&color=fff&rounded=true" alt="Rosana Hulais"></div>
+                <div class="author-info">
+                  <h4>Rosana Hulais</h4>
+                  <span class="sede-tag">📍 Caballito</span>
+                </div>
+              </div>
+              <div class="stars small">★★★★★</div>
+              <p class="muted">"Hicimos el cumple N°8 de Uriel y lo pasaron genial, las chicas unas genias cómo guiaron al grupo para resolver los desafíos. ¡Salieron muy contentos todos!"</p>
+            </a>
+
+            <!-- Belgrano -->
+            <a href="https://maps.app.goo.gl/PPh9AKeujFJackSu7" target="_blank" rel="noopener" class="review-card interactive">
+              <div class="review-google-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Ver reseña</span>
+              </div>
+              <div class="review-author">
+                <div class="avatar"><img src="https://ui-avatars.com/api/?name=Alfredo+Rojo&background=3b82f6&color=fff&rounded=true" alt="Alfredo Rojo"></div>
+                <div class="author-info">
+                  <h4>Alfredo Rojo</h4>
+                  <span class="sede-tag">📍 Belgrano</span>
+                </div>
+              </div>
+              <div class="stars small">★★★★★</div>
+              <p class="muted">"Excelente atención y un muy lindo lugar. Allí festejamos el cumple de mi hija y estuvo todo bárbaro. Los chicos se re divirtieron y lo pasaron genial. Altamente recomendable para festejos infantiles. ¡Sigan así!"</p>
+            </a>
+
+            <!-- Flores (Guardianes) -->
+            <a href="https://maps.app.goo.gl/ReYcvWKou9qDRKzS7" target="_blank" rel="noopener" class="review-card interactive">
+              <div class="review-google-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Ver reseña</span>
+              </div>
+              <div class="review-author">
+                <div class="avatar"><img src="https://ui-avatars.com/api/?name=Ludmila+Voltura&background=8b5cf6&color=fff&rounded=true" alt="Ludmila Voltura"></div>
+                <div class="author-info">
+                  <h4>Ludmila Voltura</h4>
+                  <span class="sede-tag">📍 Flores (Guardianes)</span>
+                </div>
+              </div>
+              <div class="stars small">★★★★★</div>
+              <p class="muted">"Festejamos el cumple de mi nene de 8 años. La verdad fue espectacular, el tiempo justo para que disfruten de la sucursal de escape y los juegos interactivos. El personal a cargo muy buena onda."</p>
+            </a>
+
+            <!-- Flores (Laboratorio) -->
+            <a href="https://maps.app.goo.gl/okf3Fz2Tqbd5kEYn9" target="_blank" rel="noopener" class="review-card interactive">
+              <div class="review-google-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Ver reseña</span>
+              </div>
+              <div class="review-author">
+                <div class="avatar"><img src="https://ui-avatars.com/api/?name=Cristian+Verzero&background=10b981&color=fff&rounded=true" alt="Cristian Verzero"></div>
+                <div class="author-info">
+                  <h4>Cristian Verzero</h4>
+                  <span class="sede-tag">📍 Flores (Laboratorio)</span>
+                </div>
+              </div>
+              <div class="stars small">★★★★★</div>
+              <p class="muted">"Espectacular la experiencia del cumple de mis hijos. 25 chicos disfrutaron del cumple y salió increíble. Gracias a las chicas que atendieron con re buena onda. Temática excelente."</p>
+            </a>
+
+            <!-- Floresta -->
+            <a href="https://maps.app.goo.gl/xr4Waf9ikSMdSQ6y9" target="_blank" rel="noopener" class="review-card interactive">
+              <div class="review-google-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Ver reseña</span>
+              </div>
+              <div class="review-author">
+                <div class="avatar"><img src="https://ui-avatars.com/api/?name=Ezequiel+Pineiro&background=f59e0b&color=fff&rounded=true" alt="Ezequiel Piñeiro"></div>
+                <div class="author-info">
+                  <h4>Ezequiel Piñeiro</h4>
+                  <span class="sede-tag">📍 Floresta</span>
+                </div>
+              </div>
+              <div class="stars small">★★★★★</div>
+              <p class="muted">"El lugar es muy lindo, los chicos que atienden le ponen la mejor onda para que los nenes disfruten. La atención y coordinar el cumple fue muy fácil y amena, recontra recomendable."</p>
+            </a>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevReview" aria-label="Anterior">←</button>
+            <button class="slider-btn" id="nextReview" aria-label="Siguiente">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEDES -->
+    <section id="sedes" class="section section-soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Nuestras Sucursales</h2>
+          <p>Elegí la sucursal más cercana para tu aventura</p>
+        </div>
+        <div class="sedes-grid reveal">
+          <div class="sede-card">
+            <div class="sede-img"><img src="img/El Legado del Mago Legendario.jpg" alt="Caballito" /></div>
+            <h4>Caballito</h4>
+            <p>Zuviria 275, Caballito, CABA</p>
+            <a class="sede-tel" href="tel:+541173616186">(011) 15 7361-6186</a>
+            <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491173616186&text=Hola!"
+              target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="sede-card">
+            <div class="sede-img"><img src="img/Academia de Héroes.jpg" alt="Belgrano" /></div>
+            <h4>Belgrano</h4>
+            <p>Echeverría 2490, Belgrano, CABA</p>
+            <a class="sede-tel" href="tel:+5491122549531">+54 9 11 2254-9531</a>
+            <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491122549531&text=Hola!"
+              target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="sede-card">
+            <div class="sede-img"><img src="img/Los Guardianes del Planeta.jpg" alt="Flores" /></div>
+            <h4>Flores</h4>
+            <p>Av. Rivadavia 6395, Flores, CABA</p>
+            <a class="sede-tel" href="tel:+541123989467">(011) 15 2398-9467</a>
+            <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!"
+              target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="sede-card">
+            <div class="sede-img"><img src="img/Los Secretos del Bosque Mágico.jpg" alt="Flores 2" /></div>
+            <h4>Flores 2</h4>
+            <p>Av. J.B. Alberdi 2020, CABA</p>
+            <a class="sede-tel" href="tel:+541123879152">(011) 15 2387-9152</a>
+            <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491123879152&text=Hola!"
+              target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="sede-card">
+            <div class="sede-img"><img src="img/El Árbol Encantado.jpg" alt="Floresta" /></div>
+            <h4>Floresta</h4>
+            <p>Av. Rivadavia 8022, Floresta, CABA</p>
+            <a class="sede-tel" href="tel:+541123992012">(011) 2399-2012</a>
+            <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491123992012&text=Hola!"
+              target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + CONTACTO -->
+    <section id="reservar" class="cta">
+      <div class="container cta-inner reveal">
+        <h2>¿Listo para la aventura?</h2>
+        <p>Reservá tu lugar y viví una experiencia que nunca van a olvidar</p>
+        <a class="btn btn-primary open-booking-modal" href="#bookingModal">¡Reservar por WhatsApp!</a>
+      </div>
+
+      <div id="contacto" class="container footer-grid reveal">
+        <div class="footer-col">
+          <h3>Escape Juniors</h3>
+          <p class="muted">La primera sala de escape para adultos, adaptada para chicos. 3 niveles de dificultad para
+            toda la familia.</p>
+          <p class="muted">© 2026 Escape Juniors</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Sedes</h3>
+          <p class="muted">📍 Caballito · Belgrano</p>
+          <p class="muted">📍 Flores · Flores 2</p>
+          <p class="muted">📍 Floresta</p>
+          <a class="link" href="#sedes">Ver todas las sedes →</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Seguinos</h3>
+          <div class="social">
+            <a class="social-btn" href="https://www.facebook.com/escapejuniors/" target="_blank" rel="noopener"
+              aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a class="social-btn" href="https://www.instagram.com/escapejuniors/" target="_blank" rel="noopener"
+              aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a class="social-btn" href="https://api.whatsapp.com/send?phone=5491173616186&text=Hola!" target="_blank"
+              rel="noopener" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <img src="assets/logo.png" alt="Escape Juniors Logo" />
+        <p class="muted">Escape Juniors © 2026 – Desarrollado por Matias Napoli</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float open-booking-modal" href="#bookingModal" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <!-- MODAL DE RESERVAS -->
+  <div id="bookingModal" class="booking-modal" aria-hidden="true">
+    <div class="booking-modal-overlay"></div>
+    <div class="booking-modal-content">
+      <button class="booking-modal-close" aria-label="Cerrar modal">×</button>
+      <div class="booking-modal-head">
+        <h2>Elegí una Sucursal</h2>
+        <p>Seleccioná la sede donde querés vivir tu aventura para contactarnos por WhatsApp.</p>
+      </div>
+      <div class="booking-modal-grid">
+        <a href="https://api.whatsapp.com/send?phone=5491173616186&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
+          <div class="booking-branch-img"><img src="img/El Legado del Mago Legendario.jpg" alt="Caballito" /></div>
+          <h3>Caballito</h3>
+          <p class="booking-address">Zuviria 275, Caballito, CABA</p>
+          <p class="booking-phone">(011) 15 7361-6186</p>
+          <span class="btn-wa pink">WhatsApp</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5491122549531&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
+          <div class="booking-branch-img"><img src="img/Academia de Héroes.jpg" alt="Belgrano" /></div>
+          <h3>Belgrano</h3>
+          <p class="booking-address">Echeverría 2490, Belgrano, CABA</p>
+          <p class="booking-phone">+54 9 11 2254-9531</p>
+          <span class="btn-wa pink">WhatsApp</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
+          <div class="booking-branch-img"><img src="img/Los Guardianes del Planeta.jpg" alt="Flores" /></div>
+          <h3>Flores</h3>
+          <p class="booking-address">Av. Rivadavia 6395, Flores, CABA</p>
+          <p class="booking-phone">(011) 15 2398-9467</p>
+          <span class="btn-wa pink">WhatsApp</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5491123879152&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
+          <div class="booking-branch-img"><img src="img/Los Secretos del Bosque Mágico.jpg" alt="Flores 2" /></div>
+          <h3>Flores 2</h3>
+          <p class="booking-address">Av. J.B. Alberdi 2020, CABA</p>
+          <p class="booking-phone">(011) 15 2387-9152</p>
+          <span class="btn-wa pink">WhatsApp</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5491123992012&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
+          <div class="booking-branch-img"><img src="img/El Árbol Encantado.jpg" alt="Floresta" /></div>
+          <h3>Floresta</h3>
+          <p class="booking-address">Av. Rivadavia 8022, Floresta, CABA</p>
+          <p class="booking-phone">(011) 2399-2012</p>
+          <span class="btn-wa pink">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

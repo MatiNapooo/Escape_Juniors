@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suc. Flores – 2 Salas de Escape | Escape Juniors</title>
+  <meta name="description" content="Dos salas de escape en Flores: Los Guardianes del Planeta y El Laboratorio Arácnido. Av. Rivadavia 6395, CABA." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="sala.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-logo-wrap"><img class="brand-logo-img" src="assets/logo.png" alt="Escape Juniors" /></div>
+        <span class="brand-name">Escape <strong>Juniors</strong></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#sucursales">Nuestras Sucursales</a>
+        <a href="index.html#como-funciona">Cómo Funciona</a>
+        <a href="index.html#sedes">Ubicaciones</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!" target="_blank" rel="noopener">Reservar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO con selector de salas -->
+    <section class="flores-hero">
+      <div class="flores-hero-bg" id="flores-hero-bg">
+        <img id="hero-img-guardianes" src="img/Los Guardianes del Planeta.jpg" alt="Los Guardianes del Planeta" class="fh-img active" />
+        <img id="hero-img-laboratorio" src="img/Laboratorio Aracnido.jpg" alt="El Laboratorio Arácnido" class="fh-img" />
+        <div class="sala-hero-overlay"></div>
+      </div>
+      <div class="flores-hero-content container">
+        <a class="sala-back" href="index.html#sucursales">← Volver a las sucursales</a>
+        <div class="sala-badge-sede">📍 Flores · Av. Rivadavia 6395, CABA · 2 Salas</div>
+
+        <!-- TAB SELECTOR -->
+        <div class="sala-tabs" role="tablist">
+          <button class="sala-tab active" id="tab-guardianes" role="tab" aria-selected="true" aria-controls="panel-guardianes" onclick="switchSala('guardianes')">
+            🚀 Los Guardianes del Planeta
+          </button>
+          <button class="sala-tab" id="tab-laboratorio" role="tab" aria-selected="false" aria-controls="panel-laboratorio" onclick="switchSala('laboratorio')">
+            🕷️ El Laboratorio Arácnido
+          </button>
+        </div>
+
+        <!-- PANEL GUARDIANES -->
+        <div class="sala-panel active" id="panel-guardianes">
+          <h1>Los Guardianes del Planeta</h1>
+          <p class="sala-tagline">Tienen 60 minutos para activar los cinco anillos… o quedarán a la deriva entre las estrellas.</p>
+          <div class="sala-meta">
+            <span>⏱ 60 minutos</span>
+            <span>👥 Grupos</span>
+            <span class="diff-chip">
+              <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot off"></span>
+              Dificultad Alta
+            </span>
+          </div>
+          <a class="btn btn-primary sala-cta" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar Los Guardianes del Planeta en Flores" target="_blank" rel="noopener">¡Reservar ahora!</a>
+        </div>
+
+        <!-- PANEL LABORATORIO -->
+        <div class="sala-panel" id="panel-laboratorio">
+          <h1>El Laboratorio Arácnido</h1>
+          <p class="sala-tagline">Tienen 60 minutos antes de que el sistema de seguridad vuelva a sellar todo el lugar.</p>
+          <div class="sala-meta">
+            <span>⏱ 60 minutos</span>
+            <span>👥 Grupos</span>
+            <span class="diff-chip">
+              <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span>
+              Dificultad Extrema
+            </span>
+          </div>
+          <a class="btn btn-primary sala-cta" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar El Laboratorio Aracnido en Flores" target="_blank" rel="noopener">¡Reservar ahora!</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ SALA 1: GUARDIANES ══ -->
+    <section class="sala-section section" id="seccion-guardianes">
+      <div class="container">
+        <div class="dual-sala-header reveal">
+          <div class="dual-sala-num">Sala 1</div>
+          <h2>Los Guardianes del Planeta</h2>
+        </div>
+        <div class="sala-grid">
+          <div class="sala-story reveal">
+            <p>Hace mucho tiempo, en los rincones más lejanos del universo, un poderoso artefacto fue creado por una antigua civilización cósmica. Un guante capaz de canalizar una energía tan inmensa que podía alterar el equilibrio de todo el universo.</p>
+            <p>Para evitar que cayera en las manos equivocadas, esa civilización separó su poder en cinco anillos de energía, cada uno protegido por distintos sistemas dentro de una nave espacial perdida entre las estrellas.</p>
+            <p>Ahora una señal ha comenzado a transmitirse desde esa nave abandonada. Ustedes son un grupo de exploradores espaciales enviados a investigar.</p>
+            <p><em>Deberán abordar la nave, atravesar sus sistemas y descifrar los mecanismos que protegen los cinco anillos. Solo cuando logren activarlos todos, podrán liberar el sistema de la nave para regresar a casa. Pero cuidado… en el espacio, los errores pueden tener consecuencias cósmicas.</em></p>
+          </div>
+          <div class="sala-info reveal">
+            <div class="info-card">
+              <h3>Sala 1 · Guardianes</h3>
+              <ul class="info-list">
+                <li>🚀 Sala de escape espacial (60 min)</li>
+                <li>🖥️ Juegos en pantalla gigante</li>
+                <li>📸 Espacios temáticos para fotos</li>
+                <li>🎮 Tecnología interactiva</li>
+                <li>🎊 Animación para cumpleaños</li>
+              </ul>
+              <div class="info-contact">
+                <p>📞 <a href="tel:+541123989467">(011) 15 2398-9467</a></p>
+                <p>📍 Av. Rivadavia 6395, Flores, CABA</p>
+                <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar Los Guardianes del Planeta en Flores" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+              </div>
+              <div class="map-embed">
+                <iframe
+                  src="https://maps.google.com/maps?q=Av.+Rivadavia+6395,+Flores,+Buenos+Aires,+Argentina&output=embed&z=16"
+                  width="100%" height="200" style="border:0; border-radius:12px;" allowfullscreen loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" title="Ubicación Flores"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISOR -->
+    <div class="sala-divider">
+      <div class="divider-line"></div>
+      <span class="divider-label">Segunda sala · Mismo complejo</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- ══ SALA 2: LABORATORIO ══ -->
+    <section class="sala-section section" id="seccion-laboratorio">
+      <div class="container">
+        <div class="dual-sala-header reveal">
+          <div class="dual-sala-num">Sala 2</div>
+          <h2>El Laboratorio Arácnido</h2>
+        </div>
+        <div class="sala-grid sala-grid-reverse">
+          <div class="sala-info reveal">
+            <div class="info-card">
+              <h3>Sala 2 · Laboratorio</h3>
+              <ul class="info-list">
+                <li>🕷️ Sala de escape científica (60 min)</li>
+                <li>🧪 Temática de laboratorio secreto</li>
+                <li>🖥️ Juegos en pantalla gigante</li>
+                <li>📸 Zona de fotos temática</li>
+                <li>🎊 Animación para cumpleaños</li>
+              </ul>
+              <div class="info-contact" style="border-top:none; padding-top:0;">
+                <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar El Laboratorio Aracnido en Flores" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="sala-story reveal">
+            <div class="lab-img-wrap">
+              <img src="img/Laboratorio Aracnido.jpg" alt="El Laboratorio Arácnido" class="lab-img" />
+            </div>
+            <p>Hace algunos años, un brillante pero excéntrico científico instaló en secreto un laboratorio en este lugar. Su objetivo era desarrollar una nueva generación de sueros basados en las increíbles habilidades de las arañas: fuerza, agilidad, reflejos y resistencia.</p>
+            <p>Durante meses realizó experimentos combinando distintos compuestos con especies de arañas raras traídas de todo el mundo. Pero un día, algo salió mal. Los sistemas de seguridad del laboratorio se activaron, las puertas se sellaron automáticamente y el científico desapareció sin dejar rastro.</p>
+            <p><em>Ustedes han sido enviados para investigar qué ocurrió. Deberán atravesar las distintas áreas de investigación, analizar los experimentos incompletos y descubrir la fórmula correcta. Pero tengan cuidado… porque algunas de sus creaciones todavía podrían estar aquí.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUMPLEAÑOS / FEATURES -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>El Cumpleaños del Futuro</h2>
+          <p>Tecnología, juegos y mucha diversión en una experiencia súper dinámica · 2 salas disponibles</p>
+        </div>
+        <div class="features-grid reveal">
+          <div class="feature-card"><div class="feature-icon">🖥️</div><h3>Pantalla Gigante</h3><p>Juegos interactivos en pantalla gigante donde los chicos compiten y cooperan en equipo.</p></div>
+          <div class="feature-card"><div class="feature-icon">📸</div><h3>Zona de Fotos</h3><p>Espacios temáticos para sacarse fotos y selfies y llevarse recuerdos épicos del festejo.</p></div>
+          <div class="feature-card"><div class="feature-icon">🎮</div><h3>2 Salas de Escape</h3><p>Dos aventuras diferentes en el mismo complejo: espacio exterior y laboratorio arácnido.</p></div>
+          <div class="feature-card"><div class="feature-icon">🎊</div><h3>Animación</h3><p>Nuestros Game Masters animan toda la experiencia: acción, ciencia y mucha diversión garantizados.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container cta-inner reveal">
+        <h2>¿Listos para la aventura en Flores?</h2>
+        <p>Elegí tu sala y reservá tu lugar ahora</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar Los Guardianes del Planeta" target="_blank" rel="noopener">🚀 Guardianes del Planeta</a>
+          <a class="btn btn-secondary" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola! Quiero reservar El Laboratorio Aracnido" target="_blank" rel="noopener">🕷️ Laboratorio Arácnido</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa-float" href="index.html#bookingModal" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    function switchSala(sala) {
+      // Tabs
+      document.querySelectorAll('.sala-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.sala-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.fh-img').forEach(i => i.classList.remove('active'));
+
+      document.getElementById('tab-' + sala).classList.add('active');
+      document.getElementById('tab-' + sala).setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + sala).classList.add('active');
+      document.getElementById('hero-img-' + sala).classList.add('active');
+
+      // Scroll to section
+      const target = sala === 'guardianes' ? 'seccion-guardianes' : 'seccion-laboratorio';
+      setTimeout(() => {
+        document.getElementById(target).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  </script>
+</body>
+</html>
