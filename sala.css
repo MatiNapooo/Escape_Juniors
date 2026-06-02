@@ -208,17 +208,32 @@
   gap: 12px;
 }
 
+.sala-back-wrap {
+  display: flex;
+}
+
 .sala-back {
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .7);
-  letter-spacing: .3px;
-  transition: color .15s;
-  margin-bottom: 4px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
 }
 
 .sala-back:hover {
+  background: var(--accent);
+  border-color: var(--accent);
   color: #fff;
+  transform: translateX(-4px);
+  box-shadow: 0 8px 20px rgba(255, 79, 163, 0.4);
 }
 
 .sala-badge-sede {

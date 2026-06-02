@@ -158,7 +158,7 @@
 function switchFloresTab(sala) {
   var imgs = {
     guardianes: 'img/Los Guardianes del Planeta.jpg',
-    laboratorio: 'img/Laboratorio Aracnido.jpg'
+    laboratorio: 'img/Spiderman.jpeg'
   };
   var alts = {
     guardianes: 'Los Guardianes del Planeta',
