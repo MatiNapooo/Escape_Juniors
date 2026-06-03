@@ -417,6 +417,30 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  /* Flores 2: imagen especial para móvil */
+  #flores2-hero-img {
+    content: url('img/Flores2R.png');
+    object-position: center center;
+  }
+
+  /* Caballito: imagen especial para móvil */
+  #caballito-hero-img {
+    content: url('img/CABALLITOR.png');
+    object-position: center center;
+  }
+
+  /* Belgrano: imagen especial para móvil */
+  #belgrano-hero-img {
+    content: url('img/FLORESTAR.png');
+    object-position: center center;
+  }
+
+  /* Floresta: imagen especial para móvil */
+  #floresta-hero-img {
+    content: url('img/BELGRANOR.png');
+    object-position: center center;
+  }
 }
 
 /* ── Highlights compactos dentro del sala-story ── */

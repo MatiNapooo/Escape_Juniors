@@ -49,7 +49,7 @@
       <nav class="mobile-nav">
         <a href="caballito.html" class="mobile-link">El Legado del Mago Legendario</a>
         <a href="belgrano.html" class="mobile-link">Academia de Héroes</a>
-        <a href="flores.html" class="mobile-link">Los Guardianes del Planeta</a>
+        <!-- FLORES 1 (Oculto temporalmente): <a href="flores.html" class="mobile-link">Los Guardianes del Planeta</a> -->
         <a href="flores2.html" class="mobile-link">Los Secretos del Bosque Mágico</a>
         <a href="floresta.html" class="mobile-link">El Árbol Encantado</a>
       </nav>
@@ -97,27 +97,35 @@
         <div class="features-grid reveal">
           <div class="feature-card">
             <div class="feature-icon">🔐</div>
-            <h3>Aventura Físico-Mental</h3>
-            <p>Un juego en tiempo real donde deberán solucionar enigmas y rompecabezas para desenlazar una historia y
-              escapar en 60 minutos.</p>
+            <div class="feature-card-text">
+              <h3>Aventura Físico-Mental</h3>
+              <p>Un juego en tiempo real donde deberán solucionar enigmas y rompecabezas para desenlazar una historia y
+                escapar en 60 minutos.</p>
+            </div>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🗺️</div>
-            <h3>Diferentes Escenarios</h3>
-            <p>Distintas temáticas y objetivos proponen un desafío contrarreloj. Muchas veces son los más chicos los más
-              astutos.</p>
+            <div class="feature-card-text">
+              <h3>Diferentes Escenarios</h3>
+              <p>Distintas temáticas y objetivos proponen un desafío contrarreloj. Muchas veces son los más chicos los más
+                astutos.</p>
+            </div>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🧠</div>
-            <h3>Desafío e Ingenio</h3>
-            <p>Apela a la creatividad, trabajo en equipo y lógica. Genera frustración cuando no logran salir y euforia
-              al alcanzar la meta.</p>
+            <div class="feature-card-text">
+              <h3>Desafío e Ingenio</h3>
+              <p>Apela a la creatividad, trabajo en equipo y lógica. Genera frustración cuando no logran salir y euforia
+                al alcanzar la meta.</p>
+            </div>
           </div>
           <div class="feature-card">
             <div class="feature-icon">✅</div>
-            <h3>Apto para Claustrofóbicos</h3>
-            <p>Hay asistentes supervisando por circuito cerrado toda la aventura. Los participantes son monitoreados y
-              se les dan pistas.</p>
+            <div class="feature-card-text">
+              <h3>Apto para Claustrofóbicos</h3>
+              <p>Hay asistentes supervisando por circuito cerrado toda la aventura. Los participantes son monitoreados y
+                se les dan pistas.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -185,26 +193,22 @@
           </div>
         </article>
 
-        <!-- FLORES (2 SALAS) -->
+        <!-- FLORES 1 (Oculto temporalmente)
         <article id="flores" class="room reveal">
           <div class="room-media" id="flores-room-media">
             <img src="img/Los Guardianes del Planeta.jpg" alt="Los Guardianes del Planeta" class="room-img" id="flores-img" />
             <div class="room-badge">Flores &nbsp;·&nbsp; 2 Salas</div>
           </div>
           <div class="room-card">
-            <!-- Tab switcher -->
             <div class="room-tabs" role="tablist" aria-label="Salas de Flores">
               <button class="room-tab-btn active" id="ftab-guardianes" role="tab" aria-selected="true"
                 onclick="switchFloresTab('guardianes')">🚀 Guardianes del Planeta</button>
               <button class="room-tab-btn" id="ftab-laboratorio" role="tab" aria-selected="false"
                 onclick="switchFloresTab('laboratorio')">🕷️ Laboratorio Arácnido</button>
             </div>
-
-            <!-- Panel Guardianes -->
             <div class="room-tab-panel active" id="fpanel-guardianes" role="tabpanel">
               <div class="room-top">
                 <div class="room-tab-label">Sala 1</div>
-
                 <h3>Los Guardianes del Planeta</h3>
                 <div class="room-meta">
                   <span>⏱ 60 minutos</span>
@@ -221,12 +225,9 @@
                 <a class="btn btn-secondary" href="flores.html">Ver más</a>
               </div>
             </div>
-
-            <!-- Panel Laboratorio -->
             <div class="room-tab-panel" id="fpanel-laboratorio" role="tabpanel">
               <div class="room-top">
                 <div class="room-tab-label">Sala 2</div>
-
                 <h3>El Laboratorio Arácnido</h3>
                 <div class="room-meta">
                   <span>⏱ 60 minutos</span>
@@ -245,9 +246,10 @@
             </div>
           </div>
         </article>
+        -->
 
         <!-- FLORES 2 -->
-        <article id="flores2" class="room room-reverse reveal">
+        <article id="flores2" class="room reveal">
           <div class="room-media">
             <img src="img/Los Secretos del Bosque Mágico.jpg" alt="Los Secretos del Bosque Mágico" class="room-img" />
             <div class="room-badge">Flores 2</div>
@@ -274,7 +276,7 @@
         </article>
 
         <!-- FLORESTA -->
-        <article id="floresta" class="room reveal">
+        <article id="floresta" class="room room-reverse reveal">
           <div class="room-media">
             <img src="img/El Árbol Encantado.jpg" alt="El Árbol Encantado" class="room-img" />
             <div class="room-badge">Floresta</div>
@@ -498,6 +500,7 @@
             <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491122549531&text=Hola!"
               target="_blank" rel="noopener">WhatsApp</a>
           </div>
+          <!-- FLORES 1 (Oculto temporalmente)
           <div class="sede-card">
             <div class="sede-img"><img src="img/Los Guardianes del Planeta.jpg" alt="Flores" /></div>
             <h4>Flores</h4>
@@ -506,6 +509,7 @@
             <a class="btn btn-primary sede-btn" href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!"
               target="_blank" rel="noopener">WhatsApp</a>
           </div>
+          -->
           <div class="sede-card">
             <div class="sede-img"><img src="img/Los Secretos del Bosque Mágico.jpg" alt="Flores 2" /></div>
             <h4>Flores 2</h4>
@@ -618,6 +622,7 @@
           <p class="booking-phone">+54 9 11 2254-9531</p>
           <span class="btn-wa pink">WhatsApp</span>
         </a>
+        <!-- FLORES 1 (Oculto temporalmente)
         <a href="https://api.whatsapp.com/send?phone=5491123989467&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
           <div class="booking-branch-img"><img src="img/Los Guardianes del Planeta.jpg" alt="Flores" /></div>
           <h3>Flores</h3>
@@ -625,6 +630,7 @@
           <p class="booking-phone">(011) 15 2398-9467</p>
           <span class="btn-wa pink">WhatsApp</span>
         </a>
+        -->
         <a href="https://api.whatsapp.com/send?phone=5491123879152&text=Hola!" target="_blank" rel="noopener" class="booking-branch-card">
           <div class="booking-branch-img"><img src="img/Los Secretos del Bosque Mágico.jpg" alt="Flores 2" /></div>
           <h3>Flores 2</h3>
