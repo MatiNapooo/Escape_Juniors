@@ -6,7 +6,8 @@
   min-height: 100vh;
   padding-top: 72px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
 }
 
@@ -79,6 +80,7 @@
 .sala-panel {
   display: none;
   flex-direction: column;
+  align-items: flex-start;
   gap: 12px;
 }
 
@@ -439,6 +441,18 @@
   /* Floresta: imagen especial para móvil */
   #floresta-hero-img {
     content: url('img/BELGRANOR.png');
+    object-position: center center;
+  }
+
+  /* Flores – Guardianes del Planeta: imagen especial para móvil */
+  #hero-img-guardianes {
+    content: url('img/GuanteleteMovil.png');
+    object-position: center center;
+  }
+
+  /* Flores – Laboratorio Arácnido: imagen especial para móvil */
+  #hero-img-laboratorio {
+    content: url('img/SpidermanMovil.png');
     object-position: center center;
   }
 }
